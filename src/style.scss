@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.carousel{
+    margin: 50px 30px;
+    display: flex;
+    align-items: center;
+
+    .container{
+        width: 900px; /* set carousel size*/
+        margin: auto;
+        overflow: hidden;
+    
+    
+    }
+
+    .slide{
+        display: flex;
+        width: 9999px;
+        height: 700px;
+        .content{
+            width: 900px; /* similar to container size*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            font-size: 50px;
+
+        }
+
+    }
+
+    #prev, #next{
+        border: none;
+        background-color: Transparent;
+        height: 50px;
+        width: 50px;
+        
+        i{
+            font-size: 50px;
+        }
+    }
+
+    #prev:focus, #next:focus {
+        outline: 0;
+      
+      }
+
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 768px) { 
+    .carousel{
+
+        .container{
+            width: 600px;
+        
+        }
+
+        .slide{
+            height: 500px;
+            
+            .content{
+                width: 600px;
+            
+            }
+    
+        }
+
+    }
+
+}
+
+
+/* PHONE */
+
+@media screen and (max-width: 375px) {
+    .carousel{
+        
+        .container{
+            width: 200px;
+        
+        }
+
+        .slide{
+            height: 150px;
+            
+            .content{
+                width: 200px;
+            
+            }
+    
+        }
+
+    }
+
+}
+
+
+

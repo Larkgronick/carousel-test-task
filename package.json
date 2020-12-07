@@ -1,0 +1,31 @@
+{
+  "name": "scandiweb",
+  "version": "1.0.0",
+  "description": "scandiweb carousel test task",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "dev": "./node_modules/.bin/webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Larkgronick/carousel-test-task.git"
+  },
+  "author": "Larkgronick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Larkgronick/carousel-test-task/issues"
+  },
+  "homepage": "https://github.com/Larkgronick/carousel-test-task#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
