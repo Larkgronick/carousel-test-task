@@ -4,27 +4,97 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+    <title>Scandiweb Carousel</title>
     <script src="https://kit.fontawesome.com/aa7a31f950.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="carousel">
-      <button id="prev"><i class="fas fa-angle-left"></i></button>
-      <div class="container">
-        <div class="slide">
-          <img class="content" src="./src/assets/member-5.png" id="last" alt="">
-          <img class="content" src="./src/assets/member-1.png" alt="">
-          <img class="content" src="./src/assets/member-2.png" alt=""> 
-          <img class="content" src="./src/assets/member-3.png" alt="">
-          <img class="content" src="./src/assets/member-4.png" alt="">
-          <p class="content" >Text 1 </p>
-          <p class="content" >Text 2</p>
-          <p class="content" >Text 3</p>
-          <img class="content"src="./src/assets/wide.png" alt="">
-          <img class="content"src="./src/assets/member-5.png" alt="">
-          <img class="content"src="./src/assets/member-1.png" id="first" alt="">
+    <div class="all">
+      <!-- REMOVE TAG H1 TO DELETE CAROUSEL CAPTION -->
+      <h1 class="scandiweb">Scandiweb Carousel</h1>
+      <!--  -->
+        <div class="carousel">
+          <button id="prev"><i class="fas fa-angle-left"></i></button>
+          <div class="container">
+            <div class="slide">       
+              <!-- REPEAT YOUR LAST SLIDE HERE -->   
+              <div class="content" id="last" >
+                <div class="text">
+                  <h2 class="title">Make You Own Carousel</h2>
+                  <p class="description">Feel free to edit this carousel as you wish.</p>
+                  <img src="./src/assets/edit.gif" alt="jim-carrey"/>
+                  <p class="description">Eventually, it was created for this...</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h2 class="title">How It Works</h2>
+                  <p class="description">Scandiweb Carousel supports turning pages to left and right sides with smooth transitions. Wow!</p>
+                  <p class="description"> Be free to try <span>&#128521</span></p>
+                
+                </div>
+              </div>
+              <div class="content"> 
+                <div class="text">
+                  <h2 class="title">Images</h2>
+                  <p class="description">Slides great when they show some images because nobody wants to staring on text.</p>
+                  <p class="description"> How about to see 2020 Comedy Wildlife photos? </p>
+                  <img src="./src/assets/excited.jpg" alt="patrick-stewart">
+                  <p class="description">Move right to see</p>
+                
+                </div>
+              </div>
+              <img class="content" src="./src/assets/parrots.jpg" alt="">
+              <img class="content" src="./src/assets/seal.jpg" alt="">
+              <img class="content" src="./src/assets/tiger.jpg" alt="">
+              <img class="content" src="./src/assets/bears.jpg" alt="">
+              <div class="content" >
+                <div class="text">
+                  <h2 class="title">Gallery Feature</h2>
+                  <p class="description">How about to see every nominee all together?</p>
+                  <p class="description">Do not bother! Just use "gallery" class style</p>
+                </div>
+              </div>
+              <div class="content">
+                  <div class="gallery">
+                    <img src="./src/assets/parrots.jpg" alt="">
+                    <img src="./src/assets/seal.jpg" alt="">
+                    <img src="./src/assets/tiger.jpg" alt="">
+                    <img src="./src/assets/bears.jpg" alt="">
+                  </div>
+              </div>
+              <div class="content" >
+                <div class="text">
+                  <h2 class="title">Select slide</h2>
+                  <p class="description">Need for speed by scrolling?</p>
+                  <p class="description">Use "Go To Slide" select option</p>
+                  <img src="./src/assets/fast.jpg" alt="">
+                  <i class="fas fa-arrow-down"></i></i>
+                </div>
+              </div>
+              <div class="content" >
+                <div class="text">
+                  <h2 class="title">Make You Own Carousel</h2>
+                  <p class="description">Feel free to edit this carousel as you wish.</p>
+                  <img src="./src/assets/edit.gif" alt="jim-carrey"/>
+                  <p class="description">Eventually, it was created for this...</p>
+                </div>
+              </div>
+              <!-- REPEAT YOUR FIRST SLIDE HERE -->
+              <div class="content" id="first"> 
+                <div class="text">
+                  <h2 class="title">How It Works</h2>
+                  <p class="description">Wow! Scandiweb Carousel supports turning pages to left and right sides with smooth transitions</p>
+                  <p class="description"> Be free to try <span>&#128521</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="next"><i class="fas fa-angle-right"></i></button>
+        </div>  
+        <div class="goTo">
+          <span>Go To Slide: </span>
+          <select id="slide-select"></select>
         </div>
-      </div>
-      <button id="next"><i class="fas fa-angle-right"></i></button>
     </div>
   <script src='./dist/bundle.js'></script>
   </body>
